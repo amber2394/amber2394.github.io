@@ -2,31 +2,21 @@
 <html>
 <head>
   <title>Amber's Travel Blog - Contact</title>
-  <style>
-ul {
-    list-style-type: none;
-    margin: 10;
-    padding: 0;
-    overflow: hidden;
-    background-color: white;
-}
-
-li {
-    float: left;
-}
-</style>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body style="background-color:peachpuff;">
+
+<body>
+
 <nav>
-  <ul>
-    <a href="index.html"><li style="font-size: 20px; color: darksalmon; padding-right: 10px">HOME</li></a>
-    <a href="#"><li style="font-size: 20px; color: darksalmon; padding-right: 10px">CONTACT</li></a>
+  <ul class="nav">
+    <a href="index.html"><li>HOME</li></a>
+    <a href="#"><li>CONTACT</li></a>
   </ul>
 </nav>
 
-<div style="width: 800px; background-color: sandybrown; margin: auto; text-align: center;">
+<div>
 
-  <h1 style="color: white">Contact</h1>
+  <h1>Contact</h1>
 
   <center><pre>
   Amber Jhané
@@ -35,16 +25,16 @@ li {
   Brooklyn, NY
  </pre></center>
 
-<form style="text-align: left;padding:20px;" name="Contact me!" action="success.html">
-<div>
+<form class="form" name="Contact me!" action="success.html">
+<div class="input">
   <label>Name:</label>
   <input type="text" name="name">
 </div>
-<br><div>
+<br><div class="input">
   <label>Email:</label>
   <input type="email" name="email">
 </div>
-<br><div>
+<br><div class="input">
   <label>How often do you travel?</label>
   <select name="Travel Frequency">
   <option value="never">Never.</option>
@@ -52,12 +42,12 @@ li {
   <option value="avid traveler">2+ times a year.</option>
   </select>
 </div>
-<br><div>
+<br><div class="input">
   <label>Talk to me!</label>
   <br><textarea name="contact" rows="10" cols="50">
   Hey Amber, I really like your blog because... (:P)
   </textarea>
-<br><button type="submit">Submit this form!</button>
+<br><button id="submit" type="submit">Submit this form!</button>
 </div>
 </form>
 </div>
